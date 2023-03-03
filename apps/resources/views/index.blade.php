@@ -8,6 +8,15 @@ body {
 .bg-amber-500 {
     background: #3F9F63!important;
 }
+.border-gray-500 {
+    border-color: #3F9F63!important;
+}
+.hover\:bg-amber-500:hover{
+    background: #3F9F63!important;
+    color: #fff!important;
+}
+
+
 </style>
 
 @section('content')
@@ -74,19 +83,19 @@ body {
                             <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
                             <div class="hidden -mx-4 md:flex md:items-center w-[900px]">
                                 <a href="{{ url('studio') }}"
-                                    class="{{ (request()->is('Home')) ? 'block mx-6 mt-2 py-3 border-b-2 border-white h-full text-sm capitalize text-[18px] cursor-pointer' : 'block mx-6 mt-2 py-3 border-b-2 hover:border-white border-transparent h-full text-sm text-white capitalize hover:text-white active:text-amber-500 active:border-amber-500 cursor-pointer' }}">
+                                    class="{{ (request()->is('Home')) ? 'block mx-6 mt-2 py-3 border-b-2 border-white h-full text-sm capitalize text-[18px] cursor-pointer' : 'block mx-6 mt-2 py-3 border-b-2 hover:border-white border-transparent h-full text-sm text-white capitalize hover:text-white  cursor-pointer' }}">
                                     Home
                                 </a>
                                 <a href="{{ url('studio') }}"
-                                    class="{{ (request()->is('Home')) ? 'block mx-6 mt-2 py-3 border-b-2 border-white h-full text-sm capitalize text-[18px] cursor-pointer' : 'block mx-6 mt-2 py-3 border-b-2 hover:border-white border-transparent h-full text-sm text-white capitalize hover:text-white active:text-amber-500 active:border-amber-500 cursor-pointer' }}">
+                                    class="{{ (request()->is('Home')) ? 'block mx-6 mt-2 py-3 border-b-2 border-white h-full text-sm capitalize text-[18px] cursor-pointer' : 'block mx-6 mt-2 py-3 border-b-2 hover:border-white border-transparent h-full text-sm text-white capitalize hover:text-white cursor-pointer' }}">
                                     Pricing
                                 </a>
                                 <a href="{{ url('studio') }}"
-                                    class="{{ (request()->is('Home')) ? 'block mx-6 mt-2 py-3 border-b-2 border-white h-full text-sm capitalize text-[18px] cursor-pointer' : 'block mx-6 mt-2 py-3 border-b-2 hover:border-white border-transparent h-full text-sm text-white capitalize hover:text-white active:text-amber-500 active:border-amber-500 cursor-pointer' }}">
+                                    class="{{ (request()->is('Home')) ? 'block mx-6 mt-2 py-3 border-b-2 border-white h-full text-sm capitalize text-[18px] cursor-pointer' : 'block mx-6 mt-2 py-3 border-b-2 hover:border-white border-transparent h-full text-sm text-white capitalize hover:text-white  cursor-pointer' }}">
                                     Templates(Coming soon)
                                 </a>
                                 <a href="{{ url('studio') }}"
-                                    class="{{ (request()->is('Home')) ? 'block mr-9 ml-auto mt-2 py-3 border-b-2 border-white h-full text-sm capitalize text-[18px] cursor-pointer' : 'block mr-9 mt-2 py-3 border-b-2 hover:border-white ml-auto border-transparent h-full text-sm text-white capitalize hover:text-white active:text-amber-500 active:border-amber-500 cursor-pointer' }}">
+                                    class="{{ (request()->is('Home')) ? 'block mr-9 ml-auto mt-2 py-3 border-b-2 border-white h-full text-sm capitalize text-[18px] cursor-pointer' : 'block mr-9 mt-2 py-3 border-b-2 hover:border-white ml-auto border-transparent h-full text-sm text-white capitalize hover:text-white cursor-pointer' }}">
                                     Login
                                 </a>
                                 <a href="{{ url('incubator') }}"
@@ -109,9 +118,15 @@ body {
                     <div class="w-6/12 text-white">
                         <h1 class="text-[64px] leading-[140%] mb-9 font-medium tracking-tight">EXPERIENCE THE <br> FREEDOM OF<br> BUILDING YOUR OWN<br> WEBSITE</h1>
                         <p class="text-[18px] leading-7 mb-14 tracking-tight">Lorem Ipsum is simply dummy text of the printing and typesetting Lorem Ipsum<br> is simply dummy text of the printing and typesettingis simply dummy text of the<br> printing and typesetting</p>
-                        <a href="/" class="bg-amber-500 text-white active:bg-amber-600 leading-[56px] text-center text-[18px] my-3 w-[243px] h-[56px] rounded shadow hover:shadow-lg outline-none focus:outline-none ease-linear transition-all duration-150" type="button">
+                        <a href="/" class="bg-amber-500 mb-10 text-white active:bg-amber-600 leading-[56px] text-center text-[18px] my-3 w-[243px] h-[56px] rounded shadow hover:shadow-lg outline-none focus:outline-none ease-linear transition-all duration-150" type="button">
                             Get Started For Free
                         </a>
+                        <h4 class="text-[16px] leading-[19px] tracking-[0.44px]">Scroll to explore more <br>
+                            <svg width="32" height="32" class="mt-3" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 11.5L16 20.5L25 11.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7 22L16 31L25 22" stroke="#C6C6C6" stroke-opacity="0.29" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </h4>
                     </div>
                     <div class="w-6/12 text-white">
                         <img src="/images/bg.png" alt="">
@@ -140,7 +155,7 @@ body {
                             <h3 class="text-[28px] mb-3 leading-[33px] font-medium">Pro<br> (coming  soon)</h3>
                             <p class="text-[16px] mb-10 leading-[24px]">More power for small teams create project plans with confidence</p>
                             <h4 class="text-[20px] mb-10 leading-[30px] justify-center flex items-center">$<b class="text-[40px] leading-[60px]">5</b> / month</h4>
-                            <a href="#" class=" border border-gray-900 text-dark hover:bg-amber-500 leading-[43px] text-center text-[18px] my-3 w-[160px] block mx-auto h-[43px] rounded shadow hover:shadow-lg outline-none focus:outline-none ease-linear transition-all duration-150">Coming soon</a>
+                            <a href="#" class=" border border-gray-500 text-dark hover:bg-amber-500 leading-[42px] text-center text-[18px] my-3 w-[160px] block mx-auto h-[43px] rounded shadow hover:shadow-lg outline-none focus:outline-none ease-linear transition-all duration-150">Coming soon</a>
                         </div>
                     </div>
                     <div class="w-[283px]">
@@ -148,7 +163,50 @@ body {
                             <h3 class="text-[28px] mb-3 leading-[33px] font-medium">Business+<br> (coming  soon)</h3>
                             <p class="text-[16px] mb-10 leading-[24px]">For companies that need to manage work happening across multiple teams.</p>
                             <h4 class="text-[20px] mb-10 leading-[30px] justify-center flex items-center">$<b class="text-[40px] leading-[60px]">15</b> / month</h4>
-                            <a href="#" class=" border border-gray-500 text-dark hover:bg-amber-500 leading-[43px] text-center text-[18px] my-3 w-[160px] block mx-auto h-[43px] rounded shadow hover:shadow-lg outline-none focus:outline-none ease-linear transition-all duration-150">Coming soon</a>
+                            <a href="#" class=" border border-gray-500 text-dark hover:bg-amber-500 leading-[42px] text-center text-[18px] my-3 w-[160px] block mx-auto h-[43px] rounded shadow hover:shadow-lg outline-none focus:outline-none ease-linear transition-all duration-150">Coming soon</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full bg-[388px_488px] bg-[url('/images/bg2.png')] flex bg-no-repeat pt-20 pb-40 bg-left-bottom">
+            <div class="container mx-auto">
+                <div class="flex">
+                    <div class="w-6/12">
+                        <h5 class="w-[129px] h-[34px] leading-[34px] mb-6 rounded-3xl bg-amber-500 text-white text-center">Our services</h5>
+                        <h2 class="text-[48px] leading-[58px] mb-6 font-bold tracking-tight">Why Composer Up</h2>
+                        <p class="text-[18px] leading-7 mb-14 tracking-tight">Lorem Ipsum is simply dummy text of the printing and<br> typesettingLorem Ipsum is simply dummy text of the printing and<br> typesettingLorem Ipsum is simply dummy text of the printing and<br> typesettingLorem Ipsum is simply dummy text of the printing and<br> typesetting</p>
+                    </div>
+                    <div class="w-6/12">
+                        <div class="flex flex-wrap">
+                            <div class="w-6/12 mb-9 px-12">
+                                <span class="bg-[#edf4f3] flex justify-center items-center h-[94px] w-[94px] rounded-full bg-dark">
+                                    <img src="/images/clock.png" alt="">
+                                </span>
+                                <h4 class="text-[22px] leading-[30px] mt-3 font-semibold">Lorem Ipsum</h4>
+                                <p class="text-[16px] leading-[19px] text-[#9B948E]">Lorem Ipsum is simply dummy text of the printing and typesettingLorem Ipsum is simply dummy text of the printing and typesettingLor</p>
+                            </div>
+                            <div class="w-6/12 mb-9 px-12">
+                                <span class="bg-[#edf4f3] flex justify-center items-center h-[94px] w-[94px] rounded-full bg-dark">
+                                    <img src="/images/clock.png" alt="">
+                                </span>
+                                <h4 class="text-[22px] leading-[30px] mt-3 font-semibold">Lorem Ipsum</h4>
+                                <p class="text-[16px] leading-[19px] text-[#9B948E]">Lorem Ipsum is simply dummy text of the printing and typesettingLorem Ipsum is simply dummy text of the printing and typesettingLor</p>
+                            </div>
+                            <div class="w-6/12 px-12">
+                                <span class="bg-[#edf4f3] flex justify-center items-center h-[94px] w-[94px] rounded-full bg-dark">
+                                    <img src="/images/clock.png" alt="">
+                                </span>
+                                <h4 class="text-[22px] leading-[30px] mt-3 font-semibold">Lorem Ipsum</h4>
+                                <p class="text-[16px] leading-[19px] text-[#9B948E]">Lorem Ipsum is simply dummy text of the printing and typesettingLorem Ipsum is simply dummy text of the printing and typesettingLor</p>
+                            </div>
+                            <div class="w-6/12 px-12">
+                                <span class="bg-[#edf4f3] flex justify-center items-center h-[94px] w-[94px] rounded-full bg-dark">
+                                    <img src="/images/clock.png" alt="">
+                                </span>
+                                <h4 class="text-[22px] leading-[30px] mt-3 font-semibold">Lorem Ipsum</h4>
+                                <p class="text-[16px] leading-[19px] text-[#9B948E]">Lorem Ipsum is simply dummy text of the printing and typesettingLorem Ipsum is simply dummy text of the printing and typesettingLor</p>
+                            </div>
                         </div>
                     </div>
                 </div>
