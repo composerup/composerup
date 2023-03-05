@@ -62,20 +62,18 @@
                                             </svg>
                                         </a>
                                         <a class="text-lg mx-3 text-gray-800 block transition delay-300 hover:text-amber-500 hover:bg-amber-50 rounded"
-                                            style="padding: 8px 8px 8px 32px;" href="{{ url('studio') }}">The Studio</a>
+                                            style="padding: 8px 8px 8px 32px;" href="{{ url('/') }}">home</a>
                                         <a class="text-lg mx-3 text-gray-800 block transition delay-300 hover:text-amber-500 hover:bg-amber-50 rounded"
-                                            style="padding: 8px 8px 8px 32px;" href="{{ url('fund') }}">Fund </a>
+                                            style="padding: 8px 8px 8px 32px;" href="{{ url('pricing') }}">pricing </a>
                                         <a class="text-lg mx-3 text-gray-800 block transition delay-300 hover:text-amber-500 hover:bg-amber-50 rounded"
-                                            style="padding: 8px 8px 8px 32px;" href="{{ url('team') }}">Team</a>
+                                            style="padding: 8px 8px 8px 32px;" href="{{ url('templete') }}">Templates(Coming soon)</a>
                                         <a class="text-lg mx-3 text-gray-800 block transition delay-300 hover:text-amber-500 hover:bg-amber-50 rounded"
-                                            style="padding: 8px 8px 8px 32px;" href="{{ url('investments') }}"> Portfolio Companies </a>
-                                        <a class="text-lg mx-3 text-gray-800 block transition delay-300 hover:text-amber-500 hover:bg-amber-50 rounded"
-                                            style="padding: 8px 8px 8px 32px;" href="{{ url('faq') }}">FAQ </a>
-                                        <a href="{{ url('incubator') }}"
+                                            style="padding: 8px 8px 8px 32px;" href="{{ url('login') }}"> login</a>
+                                        <a href="{{ url('signup') }}"
                                             class="bg-[#3F9F63] text-white ml-8 mt-4 active:bg-amber-600 font-bold uppercase text-sm px-6 py-2 my-3
                                     rounded shadow hover:shadow-lg outline-none focus:outline-none ease-linear transition-all duration-150"
                                             type="button">
-                                            Incubator Program
+                                            Create account
                                     </a>
                                     </div>
                                 </div>
@@ -84,22 +82,22 @@
                             <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
                             <div class="hidden -mx-4 md:flex md:items-center w-[900px]">
                                 <a href="{{ url('/') }}"
-                                    class="{{ (request()->is('Home')) ? 'block mx-6 mt-2 py-3 border-b-2 border-white h-full text-sm capitalize text-[18px] cursor-pointer' : 'block mx-6 mt-2 py-3 border-b-2 hover:border-white border-transparent h-full text-sm text-white capitalize hover:text-white  cursor-pointer' }}">
+                                    class="{{ (request()->is('Home')) ? 'block mx-6 border-b-2 border-white h-full text-sm capitalize text-[18px] cursor-pointer' : 'block mx-6 border-b-2 hover:border-white border-transparent h-full text-sm text-white capitalize text-white hover:text-white  cursor-pointer' }}">
                                     Home
                                 </a>
-                                <a href="{{ url('studio') }}"
-                                    class="{{ (request()->is('Home')) ? 'block mx-6 mt-2 py-3 border-b-2 border-white h-full text-sm capitalize text-[18px] cursor-pointer' : 'block mx-6 mt-2 py-3 border-b-2 hover:border-white border-transparent h-full text-sm text-white capitalize hover:text-white cursor-pointer' }}">
+                                <a href="{{ url('pricing') }}"
+                                    class="{{ (request()->is('pricing')) ? 'block mx-6 border-b-2 border-white h-full text-sm capitalize text-[18px] cursor-pointer' : 'block mx-6 border-b-2 hover:border-white border-transparent h-full text-sm text-white capitalize hover:text-white cursor-pointer' }}">
                                     Pricing
                                 </a>
-                                <a href="{{ url('studio') }}"
-                                    class="{{ (request()->is('Home')) ? 'block mx-6 mt-2 py-3 border-b-2 border-white h-full text-sm capitalize text-[18px] cursor-pointer' : 'block mx-6 mt-2 py-3 border-b-2 hover:border-white border-transparent h-full text-sm text-[#9e9da2] capitalize hover:text-white  cursor-pointer' }}">
+                                <a href="{{ url('templete') }}"
+                                    class="{{ (request()->is('templete')) ? 'block mx-6 border-b-2 border-white h-full text-sm capitalize text-[18px] cursor-pointer' : 'block mx-6 border-b-2 hover:border-white border-transparent h-full text-sm text-[#9e9da2] capitalize hover:text-white  cursor-pointer' }}">
                                     Templates(Coming soon)
                                 </a>
                                 <a href="{{ url('login') }}"
-                                    class="{{ (request()->is('login')) ? 'block mr-9 ml-auto mt-2 py-3 border-b-2 border-white h-full text-sm capitalize text-[18px] cursor-pointer' : 'block mr-9 mt-2 py-3 border-b-2 hover:border-white ml-auto border-transparent h-full text-sm text-white capitalize hover:text-white cursor-pointer' }}">
+                                    class="{{ (request()->is('login')) ? 'block mr-9 ml-auto border-b-2 border-white h-full text-sm capitalize text-[18px] cursor-pointer' : 'block mr-9 border-b-2 hover:border-white ml-auto border-transparent h-full text-sm text-white capitalize hover:text-white cursor-pointer' }}">
                                     Login
                                 </a>
-                                <a href="{{ url('incubator') }}"
+                                <a href="{{ url('signup') }}"
                                     class="bg-[#3F9F63] text-white active:bg-amber-600 text-center text-[18px] my-3 leading-[56px] w-[202px] h-[56px]
                                         rounded shadow hover:shadow-lg outline-none focus:outline-none ease-linear transition-all duration-150"
                                     type="button">
@@ -175,7 +173,7 @@
                 <div class="flex">
                     <div class="w-6/12">
                         <h5 class="w-[129px] h-[34px] leading-[34px] mb-6 rounded-3xl bg-[#3F9F63] text-white text-center">Our services</h5>
-                        <h2 class="text-[48px] leading-[58px] mb-6 font-bold tracking-tight">Why Composer Up</h2>
+                        <h2 class="text-[48px] leading-[58px] mb-6 font-bold tracking-tight">Why <span class="bg-[url('/images/btmline.png')] bg-bottom bg-no-repeat bg-right-bottom">Composer Up</span></h2>
                         <p class="text-[18px] leading-7 mb-14 tracking-tight">Lorem Ipsum is simply dummy text of the printing and<br> typesettingLorem Ipsum is simply dummy text of the printing and<br> typesettingLorem Ipsum is simply dummy text of the printing and<br> typesettingLorem Ipsum is simply dummy text of the printing and<br> typesetting</p>
                     </div>
                     <div class="w-6/12">
@@ -189,21 +187,21 @@
                             </div>
                             <div class="w-6/12 mb-9 px-12">
                                 <span class="bg-[#edf4f3] flex justify-center items-center h-[94px] w-[94px] rounded-full bg-dark">
-                                    <img src="/images/clock.png" alt="">
+                                    <img src="/images/documenttext.png" alt="">
                                 </span>
                                 <h4 class="text-[22px] leading-[30px] mt-3 font-semibold">Lorem Ipsum</h4>
                                 <p class="text-[16px] leading-[19px] text-[#9B948E]">Lorem Ipsum is simply dummy text of the printing and typesettingLorem Ipsum is simply dummy text of the printing and typesettingLor</p>
                             </div>
                             <div class="w-6/12 px-12">
                                 <span class="bg-[#edf4f3] flex justify-center items-center h-[94px] w-[94px] rounded-full bg-dark">
-                                    <img src="/images/clock.png" alt="">
+                                    <img src="/images/videoplay.png" alt="">
                                 </span>
                                 <h4 class="text-[22px] leading-[30px] mt-3 font-semibold">Lorem Ipsum</h4>
                                 <p class="text-[16px] leading-[19px] text-[#9B948E]">Lorem Ipsum is simply dummy text of the printing and typesettingLorem Ipsum is simply dummy text of the printing and typesettingLor</p>
                             </div>
                             <div class="w-6/12 px-12">
                                 <span class="bg-[#edf4f3] flex justify-center items-center h-[94px] w-[94px] rounded-full bg-dark">
-                                    <img src="/images/clock.png" alt="">
+                                    <img src="/images/location.png" alt="">
                                 </span>
                                 <h4 class="text-[22px] leading-[30px] mt-3 font-semibold">Lorem Ipsum</h4>
                                 <p class="text-[16px] leading-[19px] text-[#9B948E]">Lorem Ipsum is simply dummy text of the printing and typesettingLorem Ipsum is simply dummy text of the printing and typesettingLor</p>
@@ -460,15 +458,15 @@
                         <p class="text-[18px] text-[#F7F7EE] leading-[30px]  mb-0 tracking-tight">Lorem Ipsum is simply<br> dummy text of the printing<br> and typesettingLorem Ipsum<Br> is simply dummy text ld</p>
                     </div>
                     <div class="w-2/5">
-                        <h3 class="text-[18px] leading-[22px] text-white font-bold mb-[15px] tracking-tight">Home</h3>
+                        <h3 class="text-[18px] leading-[22px] text-white font-medium mb-[15px] tracking-tight">Home</h3>
                         <a href="#" class="text-[16px] block leading-[20px] text-white mb-[15px] tracking-tight">Our services</a>
                         <a href="#" class="text-[16px] block leading-[20px] text-white mb-[15px] tracking-tight">What we do</a>
                     </div>
                     <div class="w-2/5">
-                        <h3 class="text-[18px] leading-[22px] text-white font-bold mb-[15px] tracking-tight">About us</h3>
+                        <h3 class="text-[18px] leading-[22px] text-white font-medium mb-[15px] tracking-tight">About us</h3>
                     </div>
                     <div class="w-2/5">
-                        <h3 class="text-[18px] leading-[22px] text-white font-bold mb-[15px] tracking-tight">Contact us</h3>
+                        <h3 class="text-[18px] leading-[22px] text-white font-medium mb-[15px] tracking-tight">Contact us</h3>
                     </div>
                     <div class="w-2/5">
                         <h3 class="text-[28px] leading-[36px] text-white font-bold mb-[23px] tracking-tight">Try It Today</h3>
