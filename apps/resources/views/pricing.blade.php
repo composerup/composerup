@@ -83,7 +83,7 @@
                                     Login
                                 </a>
                                 <a href="{{ url('signup') }}"
-                                    class="bg-[#ffffff] text-[#3F9F63] active:bg-amber-600 text-center text-[18px] my-3 leading-[56px] w-[202px] h-[56px]
+                                    class="bg-[#ffffff] text-[#3F9F63] active:bg-amber-600 text-center xl:text-[16px] 2xl:text-[18px] my-3 2xl:leading-[56px] xl:leading-[45px] 2xl:w-[202px] xl:w-[150px] 2xl:h-[56px] xl:h-[45px]
                                         rounded shadow hover:shadow-lg outline-none focus:outline-none ease-linear transition-all duration-150"
                                     type="button">
                                     Create account
@@ -98,31 +98,31 @@
     <div class="container mx-auto mt-[100px]">
         <div class="flex flex-wrap">
             <div class="w-full text-center">
-                <h1 class="text-[64px] leading-[77px] mb-[20px] text-white font-bold">Pricing</h1>
-                <p class="text-[20px] leading-[24px] text-white">Our affordable pricing scales with your business. We don’t lock our features behind<br> expensive plans. You get all the features on every plan.</p>
+                <h1 class="2xl:text-[64px] 2xl:leading-[77px] xl:text-[48px] xl:leading-[58px] mb-[20px] text-white font-bold">Pricing</h1>
+                <p class="2xl:text-[20px] 2xl:leading-[24px] xl:text-[16px] xl:leading-[24px] text-white">Our affordable pricing scales with your business. We don’t lock our features behind<br> expensive plans. You get all the features on every plan.</p>
             </div>
             <div class="flex justify-center items-center w-full my-[100px]">
                     <div class="w-[283px]">
-                        <div class="bg-white text-center h-[385px] w-full px-8 py-10">
-                            <h3 class="text-[28px] mb-3 leading-[33px] font-medium">Code Available</h3>
-                            <p class="text-[16px] mb-20 leading-[24px]">Starter pack to help you to get started</p>
-                            <h4 class="text-[40px] mb-10 leading-[60px] font-semibold">Free</h4>
+                        <div class="bg-white text-center 2xl:h-[385px] xl:h-[290px] w-full px-8 py-10">
+                            <h3 class="2xl:text-[28px] xl:text-[20px] mb-3 2xl:leading-[33px] xl:leading-[26px] font-medium">Code Available</h3>
+                            <p class="2xl:text-[16px] xl:text-[14px] 2xl:mb-20 xl:mb-4 2xl:leading-[24px] xl:leading-[20px]">Starter pack to help you to get started</p>
+                            <h4 class="2xl:text-[40px] xl:text-[30px] 2xl:mb-10 xl:mb-4 leading-[60px] font-semibold">Free</h4>
                             <a href="#" class="bg-[#3F9F63] text-white active:bg-amber-600 leading-[43px] text-center text-[18px] my-3 w-[160px] block mx-auto h-[43px] rounded shadow hover:shadow-lg outline-none focus:outline-none ease-linear transition-all duration-150">Download</a>
                         </div>
                     </div>
                     <div class="w-[283px] mx-3">
-                        <div class="bg-white text-center h-[385px] w-full px-8 py-6">
-                            <h3 class="text-[28px] mb-3 leading-[33px] font-medium">Pro<br> (coming  soon)</h3>
-                            <p class="text-[16px] mb-10 leading-[24px]">More power for small teams create project plans with confidence</p>
-                            <h4 class="text-[20px] mb-10 leading-[30px] justify-center flex items-center">$<b class="text-[40px] leading-[60px]">5</b> / month</h4>
-                            <a href="#" class=" border border-gray-500 text-dark hover:bg-amber-500 leading-[42px] text-center text-[18px] my-3 w-[160px] block mx-auto h-[43px] rounded shadow hover:shadow-lg outline-none focus:outline-none ease-linear transition-all duration-150">Coming soon</a>
+                        <div class="bg-white text-center 2xl:h-[385px] xl:h-[290px] w-full px-8 py-6">
+                            <h3 class="2xl:text-[28px] xl:text-[20px] mb-3 2xl:leading-[33px] xl:leading-[26px] font-medium">Pro<br> (coming  soon)</h3>
+                            <p class="2xl:text-[16px] xl:text-[14px] 2xl:mb-10 xl:mb-4 2xl:leading-[24px] xl:leading-[20px]">More power for small teams create project plans with confidence</p>
+                            <h4 class="text-[20px] 2xl:mb-10 xl:mb-4 leading-[30px] justify-center flex items-center">$<b class="2xl:text-[40px] xl:text-[30px] 2xl:leading-[60px] xl:leading-[36px]">5</b> / month</h4>
+                            <a href="#" class=" border border-gray-500 xl:my-0 text-dark hover:bg-amber-500 leading-[42px] text-center text-[18px] my-3 w-[160px] block mx-auto h-[43px] rounded shadow hover:shadow-lg outline-none focus:outline-none ease-linear transition-all duration-150">Coming soon</a>
                         </div>
                     </div>
                     <div class="w-[283px]">
-                        <div class="bg-white text-center h-[385px] w-full px-8 py-6">
-                            <h3 class="text-[28px] mb-3 leading-[33px] font-medium">Business+<br> (coming  soon)</h3>
-                            <p class="text-[16px] mb-10 leading-[24px]">For companies that need to manage work happening across multiple teams.</p>
-                            <h4 class="text-[20px] mb-10 leading-[30px] justify-center flex items-center">$<b class="text-[40px] leading-[60px]">15</b> / month</h4>
+                        <div class="bg-white text-center 2xl:h-[385px] xl:h-[290px] w-full px-8 py-6">
+                            <h3  class="2xl:text-[28px] xl:text-[20px] mb-3 2xl:leading-[33px] xl:leading-[26px] font-medium">Business+<br> (coming  soon)</h3>
+                            <p class="2xl:text-[16px] xl:text-[14px] 2xl:mb-10 xl:mb-4 2xl:leading-[24px] xl:leading-[20px]">For companies that need to manage work happening across multiple teams.</p>
+                            <h4 class="text-[20px] 2xl:mb-10 xl:mb-4 leading-[30px] justify-center flex items-center">$<b class="2xl:text-[40px] xl:text-[30px] 2xl:leading-[60px] xl:leading-[36px]">15</b> / month</h4>
                             <a href="#" class=" border border-gray-500 text-dark hover:bg-amber-500 leading-[42px] text-center text-[18px] my-3 w-[160px] block mx-auto h-[43px] rounded shadow hover:shadow-lg outline-none focus:outline-none ease-linear transition-all duration-150">Coming soon</a>
                         </div>
                     </div>
@@ -131,27 +131,27 @@
     </div>
     <footer>
         <div class="bg-[#0D0D0D] pt-[70px] w-full">
-            <div class="container mx-auto">
+            <div class="container mx-auto 2xl:px-0 xl:px-9">
                 <div class="flex pb-[60px]">
                     <div class="w-2/5">
-                        <h3 class="text-[28px] leading-[34px] text-white font-bold mb-[15px]">Logos</h3>
-                        <p class="text-[18px] text-[#F7F7EE] leading-[30px]  mb-0 tracking-tight">Lorem Ipsum is simply<br> dummy text of the printing<br> and typesettingLorem Ipsum<Br> is simply dummy text ld</p>
+                        <h3 class="2xl:text-[28px] xl:text-[22px] leading-[34px] text-white font-bold mb-[15px]">Logos</h3>
+                        <p class="2xl:text-[18px] xl:text-[14px] text-[#F7F7EE] 2xl:leading-[30px] xl:leading-[24px]  mb-0 tracking-tight">Lorem Ipsum is simply<br> dummy text of the printing<br> and typesettingLorem Ipsum<Br> is simply dummy text ld</p>
                     </div>
                     <div class="w-2/5">
-                        <h3 class="text-[18px] leading-[22px] text-white font-medium mb-[15px] tracking-tight">Home</h3>
-                        <a href="#" class="text-[16px] block leading-[20px] text-white mb-[15px] tracking-tight">Our services</a>
-                        <a href="#" class="text-[16px] block leading-[20px] text-white mb-[15px] tracking-tight">What we do</a>
+                        <h3 class="2xl:text-[18px] xl:text-[16px] leading-[22px] text-white font-medium mb-[15px] tracking-tight">Home</h3>
+                        <a href="#" class="2xl:text-[16px] xl:text-[14px] block leading-[20px] text-white mb-[15px] tracking-tight">Our services</a>
+                        <a href="#" class="2xl:text-[16px] xl:text-[14px] block leading-[20px] text-white mb-[15px] tracking-tight">What we do</a>
                     </div>
                     <div class="w-2/5">
-                        <h3 class="text-[18px] leading-[22px] text-white font-medium mb-[15px] tracking-tight">About us</h3>
+                        <h3 class="2xl:text-[18px] xl:text-[16px] leading-[22px] text-white font-medium mb-[15px] tracking-tight">About us</h3>
                     </div>
                     <div class="w-2/5">
-                        <h3 class="text-[18px] leading-[22px] text-white font-medium mb-[15px] tracking-tight">Contact us</h3>
+                        <h3 class="2xl:text-[18px] xl:text-[16px] leading-[22px] text-white font-medium mb-[15px] tracking-tight">Contact us</h3>
                     </div>
                     <div class="w-2/5">
-                        <h3 class="text-[28px] leading-[36px] text-white font-bold mb-[23px] tracking-tight">Try It Today</h3>
-                        <p class="text-[16px] text-[#F7F7EE] leading-[20px] mb-[23px] text-white mb-0 tracking-tight">Get started for free. Invite all of<br> your friends with you.</p>
-                        <a href="/" class="bg-[#3F9F63] flex justify-center items-center text-white leading-[60px] text-center text-[16px] w-[185px] h-[60px] rounded-[10px] outline-none focus:outline-none ease-linear transition-all duration-150" type="button">
+                        <h3 class="2xl:text-[28px] xl:text-[22px] leading-[36px] text-white font-bold mb-[23px] tracking-tight">Try It Today</h3>
+                        <p class="2xl:text-[16px] xl:text-[14px] text-[#F7F7EE] leading-[20px] mb-[23px] text-white mb-0 tracking-tight">Get started for free. Invite all of<br> your friends with you.</p>
+                        <a href="/" class="bg-[#3F9F63] flex justify-center items-center text-white leading-[60px] text-center text-[16px] 2xl:w-[185px] xl:w-[150px] 2xl:h-[60px] xl:h-[45px] rounded-[10px] outline-none focus:outline-none ease-linear transition-all duration-150" type="button">
                             Start today 
                             <svg width="16" height="15" class="ml-3" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 7.5H15" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
@@ -162,9 +162,9 @@
                 </div>
                 <div class="flex border-t-[1px] border-solid border-[#2E4E73] py-[32px] flex justify-between items-center">
                     <div class="flex">
-                        <a href="#" class="text-[16px] block leading-[20px] text-white mr-[30px] tracking-tight">Terms & privacy</a>
-                        <a href="#" class="text-[16px] block leading-[20px] text-white mx-[30xpx] tracking-tight">Security</a>
-                        <p href="#" class="text-[16px] block leading-[20px] text-white ml-[30px] tracking-tight">©2022</p>
+                        <a href="#" class="2xl:text-[16px] xl:text-[14px] block leading-[20px] text-white mr-[30px] tracking-tight">Terms & privacy</a>
+                        <a href="#" class="2xl:text-[16px] xl:text-[14px] block leading-[20px] text-white mx-[30xpx] tracking-tight">Security</a>
+                        <p href="#" class="2xl:text-[16px] xl:text-[14px] block leading-[20px] text-white ml-[30px] tracking-tight">©2022</p>
                     </div>
                     <div class="flex">
                         <a href="#" class="text-[16px] block leading-[20px] text-white mr-[30px] tracking-tight">

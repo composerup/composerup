@@ -181,8 +181,8 @@
                 <h3 class="text-[16px] leading-[24px] text-[#757D8A] mb-3">Welcome back,</h3>
                 <h4 class="text-[20px] leading-[32px] text-[#5A6474] mb-[40px]">Simon Thompson</h4>
                 <h4 class="text-[24px] leading-[36px] font-bold mb-[40px]">Recent Projects</h4>
-                <ul class="flex">
-                    <li class="mr-[30px]">
+                <ul class="flex flex-wrap">
+                    <li class="mr-[30px] mb-9">
                         <div class="bg-white p-[16px] w-[257px] rounded-[8px]">
                             <h6 class="w-[120px] h-[26px] mb-[12px] text-[#3F9F63] text-[12px] leading-[26px] rounded-[16px] bg-[#edf4f3] text-center">Personal website</h6>
                             <h3 class="text-[16px] font-medium leading-[24px] text-[#232323] mb-3">Project 1</h3>
@@ -192,7 +192,7 @@
                             </span>
                         </div>
                     </li>
-                    <li class="mr-[30px]">
+                    <li class="mr-[30px] mb-9">
                         <div class="bg-white p-[16px] w-[257px] rounded-[8px]">
                             <h6 class="w-[120px] h-[26px] mb-[12px] text-[#3F9F63] text-[12px] leading-[26px] rounded-[16px] bg-[#edf4f3] text-center">Personal website</h6>
                             <h3 class="text-[16px] font-medium leading-[24px] text-[#232323] mb-3">Project 1</h3>
@@ -202,7 +202,7 @@
                             </span>
                         </div>
                     </li>
-                    <li class="mr-[30px]">
+                    <li class="mr-[30px] mb-9">
                         <a href="#" class="bg-transparent p-[16px] w-[257px] h-[190px] border-dashed border-[1px] border-[#653AFF] rounded-[8px] flex justify-center items-center flex-col">
                             <img src="/images/img9.png" alt="" class="mr-3" />
                             <h4 class="text-[12px] leading-[30px] text-[#653AFF] mb-[0px]">Add new Project</h4>

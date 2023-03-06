@@ -15,8 +15,8 @@
                 </a>
             </div>
             <div class="w-full text-center">
-                <h1 class="text-[64px] leading-[77px] mb-[20px] font-bold">What name would you like to give to your site?</h1>
-                <p class="text-[20px] leading-[24px]">orem Ipsum is simply dummy text of the printing aLorem Ipsum is
+                <h1 class="2xl:text-[64px] 2xl:leading-[77px] xl:text-[48px] xl:leading-[58px] mb-[20px] font-bold">What name would you like to give to your site?</h1>
+                <p class="2xl:text-[20px] 2xl:leading-[24px] xl:text-[16px] xl:leading-[24px] ">orem Ipsum is simply dummy text of the printing aLorem Ipsum is
                     simply dummy text<br> of the printing a</p>
             </div>
             <div class="w-full mt-[63px] text-center">

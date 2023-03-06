@@ -26,7 +26,7 @@
         <div class="w-full bg-cover bg-center">
             <div class="h-full w-full ">
                 <nav class="">
-                    <div class="container mx-auto px-6 pt-12 md:pt-3 ">
+                    <div class="container mx-auto px-6 pt-12 md:pt-3 2xl:px-0 xl:px-9">
                         <div class="md:flex md:items-center md:justify-between">
                             <div class="flex relative justify-center md:justify-between items-center">
                                 <div class="text-xl font-semibold text-gray-700">
@@ -98,7 +98,7 @@
                                     Login
                                 </a>
                                 <a href="{{ url('signup') }}"
-                                    class="bg-[#3F9F63] text-white active:bg-amber-600 text-center text-[18px] my-3 leading-[56px] w-[202px] h-[56px]
+                                    class="bg-[#3F9F63] text-white active:bg-amber-600 text-center xl:text-[16px] 2xl:text-[18px] my-3 2xl:leading-[56px] xl:leading-[45px] 2xl:w-[202px] xl:w-[150px] 2xl:h-[56px] xl:h-[45px]
                                         rounded shadow hover:shadow-lg outline-none focus:outline-none ease-linear transition-all duration-150"
                                     type="button">
                                     Create account
@@ -111,13 +111,13 @@
         </div>
     </header>
     <section>
-        <div class="w-full bg-cover bg-[url('/images/banner.png')] h-[1050px] flex bg-no-repeat pt-44">
-            <div class="container mx-auto">
+        <div class="w-full bg-cover bg-[url('/images/banner.png')] 2xl:h-[1050px] xl:h-[940px] flex bg-no-repeat pt-44">
+            <div class="container mx-auto 2xl:px-0 xl:px-9">
                 <div class="flex">
                     <div class="w-6/12 text-white">
-                        <h1 class="text-[64px] leading-[140%] mb-9 font-medium tracking-tight">EXPERIENCE THE <br> FREEDOM OF<br> BUILDING YOUR OWN<br> WEBSITE</h1>
-                        <p class="text-[18px] leading-7 mb-14 tracking-tight">Lorem Ipsum is simply dummy text of the printing and typesetting Lorem Ipsum<br> is simply dummy text of the printing and typesettingis simply dummy text of the<br> printing and typesetting</p>
-                        <a href="/" class="bg-[#3F9F63] mb-10 text-white active:bg-amber-600 leading-[56px] text-center text-[18px] my-3 w-[243px] h-[56px] rounded shadow hover:shadow-lg outline-none focus:outline-none ease-linear transition-all duration-150" type="button">
+                        <h1 class="2xl:text-[64px] xl:text-[40px] 2xl:leading-[140%] xl:leading-[60px] mb-9 font-medium tracking-tight">EXPERIENCE THE <br> FREEDOM OF<br> BUILDING YOUR OWN<br> WEBSITE</h1>
+                        <p class="2xl:text-[18px] xl:text-[14px] leading-7 mb-14 tracking-tight">Lorem Ipsum is simply dummy text of the printing and typesetting Lorem Ipsum<br> is simply dummy text of the printing and typesettingis simply dummy text of the<br> printing and typesetting</p>
+                        <a href="/" class="bg-[#3F9F63] mb-10 text-white active:bg-amber-600 2xl:leading-[56px] xl:leading-[45px] text-center xl:text-[16px] 2xl:text-[18px] my-3 2xl:w-[243px] xl:w-[200px] 2xl:h-[56px] xl:h-[45px] rounded shadow hover:shadow-lg outline-none focus:outline-none ease-linear transition-all duration-150" type="button">
                             Get Started For Free
                         </a>
                         <h4 class="text-[16px] leading-[19px] tracking-[0.44px]">Scroll to explore more <br>
@@ -133,35 +133,35 @@
                 </div>
             </div>
         </div>
-        <div class="w-full bg-cover bg-[url('/images/bg1.png')] h-[785px] flex bg-no-repeat -mt-[150px]">
-            <div class="container mx-auto">
+        <div class="w-full bg-cover bg-[url('/images/bg1.png')] 2xl:h-[785px] xl:h-[560px] flex bg-no-repeat -mt-[150px]">
+            <div class="container mx-auto 2xl:px-0 xl:px-9">
                 <div class="flex justify-center items-center h-full">
-                    <a href="" class="text-[48px] leading-[58px] mb-9 font-bold tracking-tight w-[380px]" >Get Started<br> Now 
+                    <a href="" class="2xl:text-[48px] xl:text-[32px] 2xl:leading-[58px] xl:leading-[36px] mb-9 font-bold tracking-tight w-[380px]" >Get Started<br> Now 
                         <svg width="82" height="24" class="inline-block" viewBox="0 0 82 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M81.0607 13.0607C81.6464 12.4749 81.6464 11.5251 81.0607 10.9393L71.5147 1.3934C70.9289 0.807611 69.9792 0.807611 69.3934 1.3934C68.8076 1.97919 68.8076 2.92893 69.3934 3.51472L77.8787 12L69.3934 20.4853C68.8076 21.0711 68.8076 22.0208 69.3934 22.6066C69.9792 23.1924 70.9289 23.1924 71.5147 22.6066L81.0607 13.0607ZM0 13.5H80V10.5H0V13.5Z" fill="black"/>
                         </svg>
                     </a>
                     <div class="w-[283px]">
-                        <div class="bg-white text-center h-[385px] w-full px-8 py-10">
-                            <h3 class="text-[28px] mb-3 leading-[33px] font-medium">Code Available</h3>
-                            <p class="text-[16px] mb-20 leading-[24px]">Starter pack to help you to get started</p>
-                            <h4 class="text-[40px] mb-10 leading-[60px] font-semibold">Free</h4>
+                        <div class="bg-white text-center 2xl:h-[385px] xl:h-[290px] w-full px-8 py-10">
+                            <h3 class="2xl:text-[28px] xl:text-[20px] mb-3 2xl:leading-[33px] xl:leading-[26px] font-medium">Code Available</h3>
+                            <p class="2xl:text-[16px] xl:text-[14px] 2xl:mb-20 xl:mb-4 2xl:leading-[24px] xl:leading-[20px]">Starter pack to help you to get started</p>
+                            <h4 class="2xl:text-[40px] xl:text-[30px] 2xl:mb-10 xl:mb-4 leading-[60px] font-semibold">Free</h4>
                             <a href="#" class="bg-[#3F9F63] text-white active:bg-amber-600 leading-[43px] text-center text-[18px] my-3 w-[160px] block mx-auto h-[43px] rounded shadow hover:shadow-lg outline-none focus:outline-none ease-linear transition-all duration-150">Download</a>
                         </div>
                     </div>
                     <div class="w-[283px] mx-3">
-                        <div class="bg-white text-center h-[385px] w-full px-8 py-6">
-                            <h3 class="text-[28px] mb-3 leading-[33px] font-medium">Pro<br> (coming  soon)</h3>
-                            <p class="text-[16px] mb-10 leading-[24px]">More power for small teams create project plans with confidence</p>
-                            <h4 class="text-[20px] mb-10 leading-[30px] justify-center flex items-center">$<b class="text-[40px] leading-[60px]">5</b> / month</h4>
-                            <a href="#" class=" border border-gray-500 text-dark hover:bg-amber-500 leading-[42px] text-center text-[18px] my-3 w-[160px] block mx-auto h-[43px] rounded shadow hover:shadow-lg outline-none focus:outline-none ease-linear transition-all duration-150">Coming soon</a>
+                        <div class="bg-white text-center 2xl:h-[385px] xl:h-[290px] w-full px-8 py-6">
+                            <h3 class="2xl:text-[28px] xl:text-[20px] mb-3 2xl:leading-[33px] xl:leading-[26px] font-medium">Pro<br> (coming  soon)</h3>
+                            <p class="2xl:text-[16px] xl:text-[14px] 2xl:mb-10 xl:mb-4 2xl:leading-[24px] xl:leading-[20px]">More power for small teams create project plans with confidence</p>
+                            <h4 class="text-[20px] 2xl:mb-10 xl:mb-4 leading-[30px] justify-center flex items-center">$<b class="2xl:text-[40px] xl:text-[30px] 2xl:leading-[60px] xl:leading-[36px]">5</b> / month</h4>
+                            <a href="#" class=" border border-gray-500 xl:my-0 text-dark hover:bg-amber-500 leading-[42px] text-center text-[18px] my-3 w-[160px] block mx-auto h-[43px] rounded shadow hover:shadow-lg outline-none focus:outline-none ease-linear transition-all duration-150">Coming soon</a>
                         </div>
                     </div>
                     <div class="w-[283px]">
-                        <div class="bg-white text-center h-[385px] w-full px-8 py-6">
-                            <h3 class="text-[28px] mb-3 leading-[33px] font-medium">Business+<br> (coming  soon)</h3>
-                            <p class="text-[16px] mb-10 leading-[24px]">For companies that need to manage work happening across multiple teams.</p>
-                            <h4 class="text-[20px] mb-10 leading-[30px] justify-center flex items-center">$<b class="text-[40px] leading-[60px]">15</b> / month</h4>
+                        <div class="bg-white text-center 2xl:h-[385px] xl:h-[290px] w-full px-8 py-6">
+                            <h3  class="2xl:text-[28px] xl:text-[20px] mb-3 2xl:leading-[33px] xl:leading-[26px] font-medium">Business+<br> (coming  soon)</h3>
+                            <p class="2xl:text-[16px] xl:text-[14px] 2xl:mb-10 xl:mb-4 2xl:leading-[24px] xl:leading-[20px]">For companies that need to manage work happening across multiple teams.</p>
+                            <h4 class="text-[20px] 2xl:mb-10 xl:mb-4 leading-[30px] justify-center flex items-center">$<b class="2xl:text-[40px] xl:text-[30px] 2xl:leading-[60px] xl:leading-[36px]">15</b> / month</h4>
                             <a href="#" class=" border border-gray-500 text-dark hover:bg-amber-500 leading-[42px] text-center text-[18px] my-3 w-[160px] block mx-auto h-[43px] rounded shadow hover:shadow-lg outline-none focus:outline-none ease-linear transition-all duration-150">Coming soon</a>
                         </div>
                     </div>
@@ -169,42 +169,42 @@
             </div>
         </div>
         <div class="w-full bg-[388px_488px] bg-[url('/images/bg2.png')] flex bg-no-repeat pt-20 pb-40 bg-left-bottom">
-            <div class="container mx-auto">
+            <div class="container mx-auto 2xl:px-0 xl:px-9">
                 <div class="flex">
                     <div class="w-6/12">
                         <h5 class="w-[129px] h-[34px] leading-[34px] mb-6 rounded-3xl bg-[#3F9F63] text-white text-center">Our services</h5>
-                        <h2 class="text-[48px] leading-[58px] mb-6 font-bold tracking-tight">Why <span class="bg-[url('/images/btmline.png')] bg-bottom bg-no-repeat bg-right-bottom">Composer Up</span></h2>
-                        <p class="text-[18px] leading-7 mb-14 tracking-tight">Lorem Ipsum is simply dummy text of the printing and<br> typesettingLorem Ipsum is simply dummy text of the printing and<br> typesettingLorem Ipsum is simply dummy text of the printing and<br> typesettingLorem Ipsum is simply dummy text of the printing and<br> typesetting</p>
+                        <h2 class="2xl:text-[48px] xl:text-[38px] leading-[58px] mb-6 font-bold tracking-tight">Why <span class="bg-[url('/images/btmline.png')] bg-bottom bg-no-repeat bg-right-bottom">Composer Up</span></h2>
+                        <p class="2xl:text-[18px] xl:text-[16px] 2xl:leading-7 xl:leading-[26px] mb-14 tracking-tight">Lorem Ipsum is simply dummy text of the printing and<br> typesettingLorem Ipsum is simply dummy text of the printing and<br> typesettingLorem Ipsum is simply dummy text of the printing and<br> typesettingLorem Ipsum is simply dummy text of the printing and<br> typesetting</p>
                     </div>
                     <div class="w-6/12">
                         <div class="flex flex-wrap">
                             <div class="w-6/12 mb-9 px-12">
-                                <span class="bg-[#edf4f3] flex justify-center items-center h-[94px] w-[94px] rounded-full bg-dark">
+                                <span class="bg-[#edf4f3] flex justify-center items-center 2xl:h-[94px] xl:h-[80px] 2xl:w-[94px] xl:w-[80px] rounded-full bg-dark">
                                     <img src="/images/clock.png" alt="">
                                 </span>
-                                <h4 class="text-[22px] leading-[30px] mt-3 font-semibold">Lorem Ipsum</h4>
-                                <p class="text-[16px] leading-[19px] text-[#9B948E]">Lorem Ipsum is simply dummy text of the printing and typesettingLorem Ipsum is simply dummy text of the printing and typesettingLor</p>
+                                <h4 class="2xl:text-[22px] xl:text-[20px] leading-[30px] mt-3 font-semibold">Lorem Ipsum</h4>
+                                <p class="2xl:text-[16px] xl:text-[14px] 2xl:leading-[19px] xl:leading-[22px] text-[#9B948E]">Lorem Ipsum is simply dummy text of the printing and typesettingLorem Ipsum is simply dummy text of the printing and typesettingLor</p>
                             </div>
                             <div class="w-6/12 mb-9 px-12">
-                                <span class="bg-[#edf4f3] flex justify-center items-center h-[94px] w-[94px] rounded-full bg-dark">
+                                <span class="bg-[#edf4f3] flex justify-center items-center 2xl:h-[94px] xl:h-[80px] 2xl:w-[94px] xl:w-[80px] rounded-full bg-dark">
                                     <img src="/images/documenttext.png" alt="">
                                 </span>
-                                <h4 class="text-[22px] leading-[30px] mt-3 font-semibold">Lorem Ipsum</h4>
-                                <p class="text-[16px] leading-[19px] text-[#9B948E]">Lorem Ipsum is simply dummy text of the printing and typesettingLorem Ipsum is simply dummy text of the printing and typesettingLor</p>
+                                <h4 class="2xl:text-[22px] xl:text-[20px] leading-[30px]  mt-3 font-semibold">Lorem Ipsum</h4>
+                                <p class="2xl:text-[16px] xl:text-[14px] 2xl:leading-[19px] xl:leading-[22px] text-[#9B948E]">Lorem Ipsum is simply dummy text of the printing and typesettingLorem Ipsum is simply dummy text of the printing and typesettingLor</p>
                             </div>
                             <div class="w-6/12 px-12">
-                                <span class="bg-[#edf4f3] flex justify-center items-center h-[94px] w-[94px] rounded-full bg-dark">
+                                <span class="bg-[#edf4f3] flex justify-center items-center 2xl:h-[94px] xl:h-[80px] 2xl:w-[94px] xl:w-[80px] rounded-full bg-dark">
                                     <img src="/images/videoplay.png" alt="">
                                 </span>
-                                <h4 class="text-[22px] leading-[30px] mt-3 font-semibold">Lorem Ipsum</h4>
-                                <p class="text-[16px] leading-[19px] text-[#9B948E]">Lorem Ipsum is simply dummy text of the printing and typesettingLorem Ipsum is simply dummy text of the printing and typesettingLor</p>
+                                <h4 class="2xl:text-[22px] xl:text-[20px] leading-[30px] mt-3 font-semibold">Lorem Ipsum</h4>
+                                <p class="2xl:text-[16px] xl:text-[14px] 2xl:leading-[19px] xl:leading-[22px] text-[#9B948E]">Lorem Ipsum is simply dummy text of the printing and typesettingLorem Ipsum is simply dummy text of the printing and typesettingLor</p>
                             </div>
                             <div class="w-6/12 px-12">
-                                <span class="bg-[#edf4f3] flex justify-center items-center h-[94px] w-[94px] rounded-full bg-dark">
+                                <span class="bg-[#edf4f3] flex justify-center items-center 2xl:h-[94px] xl:h-[80px] 2xl:w-[94px] xl:w-[80px] rounded-full bg-dark">
                                     <img src="/images/location.png" alt="">
                                 </span>
-                                <h4 class="text-[22px] leading-[30px] mt-3 font-semibold">Lorem Ipsum</h4>
-                                <p class="text-[16px] leading-[19px] text-[#9B948E]">Lorem Ipsum is simply dummy text of the printing and typesettingLorem Ipsum is simply dummy text of the printing and typesettingLor</p>
+                                <h4 class="2xl:text-[22px] xl:text-[20px] leading-[30px] mt-3 font-semibold">Lorem Ipsum</h4>
+                                <p class="2xl:text-[16px] xl:text-[14px] 2xl:leading-[19px] xl:leading-[22px] text-[#9B948E]">Lorem Ipsum is simply dummy text of the printing and typesettingLorem Ipsum is simply dummy text of the printing and typesettingLor</p>
                             </div>
                         </div>
                     </div>
@@ -212,13 +212,13 @@
             </div>
         </div>
         <div class="w-full bg-[#557662] flex bg-[url('/images/bg4.png')] bg-no-repeat bg-[350px_544px] bg-right-bottom">
-            <div class="container mx-auto">
+            <div class="container mx-auto 2xl:px-0 xl:px-9">
                 <div class="flex">
                     <div class="w-4/12 bg-[#15111E] pt-44 relative z-10 after-bg after:content-['']">
                         <div class="">
-                            <h2 class="text-[42px] leading-[62px] text-white mb-8 font-medium tracking-tight">Design You Website<br> On your own way</h2>
-                            <p class="text-[16px] leading-[30px] mb-9 text-white tracking-tight">Lorem Ipsum is simply dummy text of the printing and<br> typesettingLorem Ipsum is simply dummy text of the printing and<br> typesettingLorem Ipsum is simply dummy text of the printing and<br> typesettingLorem Ipsum is simply dummy text of the printing and<br> typesetting</p>
-                            <a href="/" class="bg-[#3F9F63] mb-10 text-white active:bg-amber-600 leading-[56px] text-center text-[18px] my-3 w-[243px] h-[56px] rounded shadow hover:shadow-lg outline-none focus:outline-none ease-linear transition-all duration-150" type="button">
+                            <h2 class="2xl:text-[42px] xl:text-[32px] xl:leading-[48px] 2xl:leading-[62px] text-white mb-8 font-medium tracking-tight">Design You Website<br> On your own way</h2>
+                            <p class="2xl:text-[16px] xl:text-[13px] 2xl:leading-[30px] xl:leading-[26px] mb-9 text-white tracking-tight">Lorem Ipsum is simply dummy text of the printing and<br> typesettingLorem Ipsum is simply dummy text of the printing and<br> typesettingLorem Ipsum is simply dummy text of the printing and<br> typesettingLorem Ipsum is simply dummy text of the printing and<br> typesetting</p>
+                            <a href="/" class="bg-[#3F9F63] mb-10 text-white active:bg-amber-600 2xl:leading-[56px] xl:leading-[45px] text-center xl:text-[16px] 2xl:text-[18px] my-3 2xl:w-[243px] xl:w-[200px] 2xl:h-[56px] xl:h-[45px] rounded shadow hover:shadow-lg outline-none focus:outline-none ease-linear transition-all duration-150" type="button">
                                 Get Started For Free
                             </a>
                         </div>
@@ -230,44 +230,44 @@
             </div>
         </div>
         <div class="w-full py-24 text-center">
-            <div class="container mx-auto">
-                <h2 class="text-[48px] leading-[58px] mb-8 font-bold tracking-tight">ComposerUp Provides</h2>
-                <p class="text-[18px] leading-[30px] mb-0 tracking-tight">Lorem Ipsum is simply dummy text of the printing and typesettingLorem Ipsum is simply dummy text of the printing<br> and typesettingis simply dummy text of the printing and typesetting</p>
+            <div class="container mx-auto 2xl:px-0 xl:px-9">
+                <h2 class="2xl:text-[48px] xl:text-[38px] xl:leading-[48px] 2xl:leading-[58px] mb-8 font-bold tracking-tight">ComposerUp Provides</h2>
+                <p class="2xl:text-[18px] xl:text-[14px] 2xl:leading-[30px] xl:leading-[26px] mb-0 tracking-tight">Lorem Ipsum is simply dummy text of the printing and typesettingLorem Ipsum is simply dummy text of the printing<br> and typesettingis simply dummy text of the printing and typesetting</p>
                 <div class="flex mt-16 text-left mb-16">
                     <div class="w-6/12 pr-14">
                         <div class="bg-gradient-to-r from-[#3F9F63] to-[#1D492E] rounded-[40px]">
                             <div class="py-10 px-9">
-                                <h3 class="text-[32px] leading-[35px] text-white mb-6 font-bold">ComposerUp Templates</h3>
-                                <h4 class="text-[24px] leading-[35px] text-white mb-1.5 font-bold">Take a look at our amazing premium<br> Webflow Templates (coming soon)</h4>
+                                <h3 class="2xl:text-[32px] xl:text-[28px] leading-[35px] text-white mb-6 font-bold">ComposerUp Templates</h3>
+                                <h4 class="2xl:text-[24px] xl:text-[20px] 2xl:leading-[35px] text-white 2xl:mb-1.5 xl:mb-3 font-bold">Take a look at our amazing premium<br> Webflow Templates (coming soon)</h4>
                                 <p class="text-[14px] leading-[23px] text-white mb-5 tracking-tight">Lorem Ipsum is simply dummy text of the printing and typesettingLorem Ipsum is simply dummy text of the printing and typesettingis simply dummy text of the printing and typesetting</p>
                                 <a href="/" class="bg-white mb-10 text-[#3F9F63] hover:bg-amber-500 font-bold leading-[56px] text-center text-[18px] my-3 w-[235px] h-[56px] rounded-3xl shadow hover:shadow-lg outline-none focus:outline-none ease-linear transition-all duration-150" type="button">
                                     Coming soon
                                 </a>
                             </div>
-                            <img src="/images/img1.png" class="w-full h-[465px]" alt="">
+                            <img src="/images/img1.png" class="w-full h-[466px]" alt="">
                         </div>
                     </div>
                     <div class="w-6/12 pl-14">
                         <div class="bg-white shadow-2xl rounded-[40px]">
                             <div class="py-10 px-9">
-                                <h3 class="text-[32px] leading-[35px] mb-6 font-bold">ComposerUp</h3>
-                                <h4 class="text-[24px] leading-[35px] mb-1.5 font-bold">Looking to design & develop an amazing <br>Webflow website?</h4>
+                                <h3 class="2xl:text-[32px] xl:text-[28px] leading-[35px] mb-6 font-bold">ComposerUp</h3>
+                                <h4 class="2xl:text-[24px] xl:text-[20px] 2xl:leading-[35px] 2xl:mb-1.5 xl:mb-3 font-bold">Looking to design & develop an amazing <br>Webflow website?</h4>
                                 <p class="text-[14px] leading-[23px] mb-5 tracking-tight">Lorem Ipsum is simply dummy text of the printing and<br> typesettingLorem Ipsum is simpl</p>
                                 <a href="/" class="bg-[#3F9F63] mb-10 text-white hover:bg-amber-500 font-bold leading-[56px] text-center text-[18px] my-3 w-[180px] h-[56px] rounded-3xl shadow hover:shadow-lg outline-none focus:outline-none ease-linear transition-all duration-150" type="button">
                                     Get Started
                                 </a>
                             </div>
-                            <img src="/images/img2.png" class="w-full h-[465px]" alt="">
+                            <img src="/images/img2.png" class="w-full 2xl:h-[465px] xl:h-[490px]" alt="">
                         </div>
                     </div>
                 </div>
-                <a href="/" class="bg-[#3F9F63] text-white active:bg-amber-600 leading-[56px] text-center text-[18px] mt-3 w-[243px] h-[56px] rounded-md shadow hover:shadow-lg outline-none focus:outline-none ease-linear transition-all duration-150" type="button">
+                <a href="/" class="bg-[#3F9F63] mb-10 text-white active:bg-amber-600 2xl:leading-[56px] mt-3 xl:leading-[45px] text-center xl:text-[16px] 2xl:text-[18px] my-3 2xl:w-[243px] xl:w-[200px] 2xl:h-[56px] xl:h-[45px] rounded shadow hover:shadow-lg outline-none focus:outline-none ease-linear transition-all duration-150" type="button">
                     Get Started For Free
                 </a>
             </div>
         </div>
         <div class="w-full pb-[50px]">
-            <div class="container mx-auto">
+            <div class="container mx-auto 2xl:px-0 xl:px-9">
                 <div class="bg-white w-full rounded-[18px] flex justify-between items-center shadow-custom p-8 mb-[30px]">
                     <h3 class="text-[24px] leading-[35px] mb-0 font-bold">FAQ</h3>
                     <a href="#" class="w-[252px] h-[50px] leading-[50px] text-center bg-[#F3F1FF] rounded-[50px] block text-[#4A3AFF] text-[16px] leading-[18px] font-medium">Frequent asked questions</a>
@@ -436,10 +436,10 @@
             </div>
         </div>
         <div class="w-full bg-[#3F9F63] pt-[120px] pb-[50px]">
-            <div class="container mx-auto text-center">
-                <h2 class="text-[72px] leading-[87px] text-white mb-0 font-bold tracking-tight mb-[24px]">Try Our Product<br> Program!!</h2>
-                <h3 class="text-[24px] leading-[32px] text-white mb-0 tracking-tight mb-[40px]">Get started for free.<br> Invite all of your friends with you.</h3>
-                <a href="/" class="bg-[#120F18] flex mx-auto justify-center items-center text-white leading-[60px] text-center text-[16px] w-[190px] h-[60px] rounded-[10px] outline-none focus:outline-none ease-linear transition-all duration-150" type="button">
+            <div class="container mx-auto text-center 2xl:px-0 xl:px-9">
+                <h2 class="2xl:text-[72px] xl:text-[38px] 2xl:leading-[87px] text-white mb-0 font-bold tracking-tight mb-[24px]">Try Our Product<br> Program!!</h2>
+                <h3 class="2xl:text-[24px] xl:text-[18px] leading-[32px] text-white mb-0 tracking-tight mb-[40px]">Get started for free.<br> Invite all of your friends with you.</h3>
+                <a href="/" class="bg-[#120F18] flex mx-auto justify-center items-center text-white leading-[60px] text-center text-[16px] 2xl:w-[190px] xl:w-[170px] 2xl:h-[60px] xl:h-[45px] rounded-[10px] outline-none focus:outline-none ease-linear transition-all duration-150" type="button">
                     Get Started 
                     <svg width="16" height="15" class="ml-3" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 7.5H15" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
@@ -451,27 +451,27 @@
     </section>
     <footer>
         <div class="bg-[#0D0D0D] pt-[70px] w-full">
-            <div class="container mx-auto">
+            <div class="container mx-auto 2xl:px-0 xl:px-9">
                 <div class="flex pb-[60px]">
                     <div class="w-2/5">
-                        <h3 class="text-[28px] leading-[34px] text-white font-bold mb-[15px]">Logos</h3>
-                        <p class="text-[18px] text-[#F7F7EE] leading-[30px]  mb-0 tracking-tight">Lorem Ipsum is simply<br> dummy text of the printing<br> and typesettingLorem Ipsum<Br> is simply dummy text ld</p>
+                        <h3 class="2xl:text-[28px] xl:text-[22px] leading-[34px] text-white font-bold mb-[15px]">Logos</h3>
+                        <p class="2xl:text-[18px] xl:text-[14px] text-[#F7F7EE] 2xl:leading-[30px] xl:leading-[24px]  mb-0 tracking-tight">Lorem Ipsum is simply<br> dummy text of the printing<br> and typesettingLorem Ipsum<Br> is simply dummy text ld</p>
                     </div>
                     <div class="w-2/5">
-                        <h3 class="text-[18px] leading-[22px] text-white font-medium mb-[15px] tracking-tight">Home</h3>
-                        <a href="#" class="text-[16px] block leading-[20px] text-white mb-[15px] tracking-tight">Our services</a>
-                        <a href="#" class="text-[16px] block leading-[20px] text-white mb-[15px] tracking-tight">What we do</a>
+                        <h3 class="2xl:text-[18px] xl:text-[16px] leading-[22px] text-white font-medium mb-[15px] tracking-tight">Home</h3>
+                        <a href="#" class="2xl:text-[16px] xl:text-[14px] block leading-[20px] text-white mb-[15px] tracking-tight">Our services</a>
+                        <a href="#" class="2xl:text-[16px] xl:text-[14px] block leading-[20px] text-white mb-[15px] tracking-tight">What we do</a>
                     </div>
                     <div class="w-2/5">
-                        <h3 class="text-[18px] leading-[22px] text-white font-medium mb-[15px] tracking-tight">About us</h3>
+                        <h3 class="2xl:text-[18px] xl:text-[16px] leading-[22px] text-white font-medium mb-[15px] tracking-tight">About us</h3>
                     </div>
                     <div class="w-2/5">
-                        <h3 class="text-[18px] leading-[22px] text-white font-medium mb-[15px] tracking-tight">Contact us</h3>
+                        <h3 class="2xl:text-[18px] xl:text-[16px] leading-[22px] text-white font-medium mb-[15px] tracking-tight">Contact us</h3>
                     </div>
                     <div class="w-2/5">
-                        <h3 class="text-[28px] leading-[36px] text-white font-bold mb-[23px] tracking-tight">Try It Today</h3>
-                        <p class="text-[16px] text-[#F7F7EE] leading-[20px] mb-[23px] text-white mb-0 tracking-tight">Get started for free. Invite all of<br> your friends with you.</p>
-                        <a href="/" class="bg-[#3F9F63] flex justify-center items-center text-white leading-[60px] text-center text-[16px] w-[185px] h-[60px] rounded-[10px] outline-none focus:outline-none ease-linear transition-all duration-150" type="button">
+                        <h3 class="2xl:text-[28px] xl:text-[22px] leading-[36px] text-white font-bold mb-[23px] tracking-tight">Try It Today</h3>
+                        <p class="2xl:text-[16px] xl:text-[14px] text-[#F7F7EE] leading-[20px] mb-[23px] text-white mb-0 tracking-tight">Get started for free. Invite all of<br> your friends with you.</p>
+                        <a href="/" class="bg-[#3F9F63] flex justify-center items-center text-white leading-[60px] text-center text-[16px] 2xl:w-[185px] xl:w-[150px] 2xl:h-[60px] xl:h-[45px] rounded-[10px] outline-none focus:outline-none ease-linear transition-all duration-150" type="button">
                             Start today 
                             <svg width="16" height="15" class="ml-3" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 7.5H15" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
@@ -482,9 +482,9 @@
                 </div>
                 <div class="flex border-t-[1px] border-solid border-[#2E4E73] py-[32px] flex justify-between items-center">
                     <div class="flex">
-                        <a href="#" class="text-[16px] block leading-[20px] text-white mr-[30px] tracking-tight">Terms & privacy</a>
-                        <a href="#" class="text-[16px] block leading-[20px] text-white mx-[30xpx] tracking-tight">Security</a>
-                        <p href="#" class="text-[16px] block leading-[20px] text-white ml-[30px] tracking-tight">©2022</p>
+                        <a href="#" class="2xl:text-[16px] xl:text-[14px] block leading-[20px] text-white mr-[30px] tracking-tight">Terms & privacy</a>
+                        <a href="#" class="2xl:text-[16px] xl:text-[14px] block leading-[20px] text-white mx-[30xpx] tracking-tight">Security</a>
+                        <p href="#" class="2xl:text-[16px] xl:text-[14px] block leading-[20px] text-white ml-[30px] tracking-tight">©2022</p>
                     </div>
                     <div class="flex">
                         <a href="#" class="text-[16px] block leading-[20px] text-white mr-[30px] tracking-tight">
