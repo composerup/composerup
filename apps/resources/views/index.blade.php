@@ -484,7 +484,7 @@
                     <div class="flex">
                         <a href="#" class="2xl:text-[16px] xl:text-[14px] block leading-[20px] text-white mr-[30px] tracking-tight">Terms & privacy</a>
                         <a href="#" class="2xl:text-[16px] xl:text-[14px] block leading-[20px] text-white mx-[30xpx] tracking-tight">Security</a>
-                        <p href="#" class="2xl:text-[16px] xl:text-[14px] block leading-[20px] text-white ml-[30px] tracking-tight">©2022</p>
+                        <p href="#" class="2xl:text-[16px] xl:text-[14px] block leading-[20px] text-white ml-[30px] tracking-tight">©2023</p>
                     </div>
                     <div class="flex">
                         <a href="#" class="text-[16px] block leading-[20px] text-white mr-[30px] tracking-tight">
