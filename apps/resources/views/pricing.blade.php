@@ -115,7 +115,7 @@
                             <h3 class="2xl:text-[28px] xl:text-[20px] mb-3 2xl:leading-[33px] xl:leading-[26px] font-medium">Pro<br> (coming  soon)</h3>
                             <p class="2xl:text-[16px] xl:text-[14px] 2xl:mb-10 xl:mb-4 2xl:leading-[24px] xl:leading-[20px]">More power for small teams create project plans with confidence</p>
                             <h4 class="text-[20px] 2xl:mb-10 xl:mb-4 leading-[30px] justify-center flex items-center">$<b class="2xl:text-[40px] xl:text-[30px] 2xl:leading-[60px] xl:leading-[36px]">5</b> / month</h4>
-                            <a href="#" class=" border border-gray-500 xl:my-0 text-dark hover:bg-amber-500 leading-[42px] text-center text-[18px] my-3 w-[160px] block mx-auto h-[43px] rounded shadow hover:shadow-lg outline-none focus:outline-none ease-linear transition-all duration-150">Coming soon</a>
+                            <a href="#" class="border border-gray-500 xl:my-0 text-dark hover:bg-[#3F9F63] hover:text-white leading-[42px] text-center text-[18px] my-3 w-[160px] block mx-auto h-[43px] rounded shadow hover:shadow-lg outline-none focus:outline-none ease-linear transition-all duration-150">Coming soon</a>
                         </div>
                     </div>
                     <div class="w-[283px]">
@@ -123,7 +123,7 @@
                             <h3  class="2xl:text-[28px] xl:text-[20px] mb-3 2xl:leading-[33px] xl:leading-[26px] font-medium">Business+<br> (coming  soon)</h3>
                             <p class="2xl:text-[16px] xl:text-[14px] 2xl:mb-10 xl:mb-4 2xl:leading-[24px] xl:leading-[20px]">For companies that need to manage work happening across multiple teams.</p>
                             <h4 class="text-[20px] 2xl:mb-10 xl:mb-4 leading-[30px] justify-center flex items-center">$<b class="2xl:text-[40px] xl:text-[30px] 2xl:leading-[60px] xl:leading-[36px]">15</b> / month</h4>
-                            <a href="#" class=" border border-gray-500 text-dark hover:bg-amber-500 leading-[42px] text-center text-[18px] my-3 w-[160px] block mx-auto h-[43px] rounded shadow hover:shadow-lg outline-none focus:outline-none ease-linear transition-all duration-150">Coming soon</a>
+                            <a href="#" class=" border border-gray-500 text-dark hover:bg-[#3F9F63] hover:text-white leading-[42px] text-center text-[18px] my-3 w-[160px] block mx-auto h-[43px] rounded shadow hover:shadow-lg outline-none focus:outline-none ease-linear transition-all duration-150">Coming soon</a>
                         </div>
                     </div>
                 </div>

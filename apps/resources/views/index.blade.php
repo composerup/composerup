@@ -277,7 +277,7 @@
                         <div class="shadow-[0px_5px_16px_rgba(8,15,52,0.06)] py-[30px] px-[40px] w-full my-[30px] border-[#fff] border-[2px] rounded-[18px] group-[[data-te-collapse-collapsed]]:border-[0px]">
                           <h2 class="mb-0" id="headingOne">
                             <button
-                              class="group relative border-0 flex w-full items-center rounded-[18px] border-0 bg-white text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] dark:bg-neutral-800 dark:text-white text-[20px] leading-[28px] font-medium "
+                              class="group relative border-0 flex w-full items-center rounded-[18px] border-0 bg-white text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] dark:text-black text-[20px] leading-[28px] font-medium "
                               type="button"
                               data-te-collapse-init
                               data-te-target="#collapseOne"
@@ -316,7 +316,7 @@
                         <div class="shadow-[0px_5px_16px_rgba(8,15,52,0.06)] py-[30px] px-[40px] w-full my-[30px] border-[#fff] border-[2px] rounded-[18px] group-[[data-te-collapse-collapsed]]:border-[0px]">
                             <h2 class="mb-0" id="headingTw">
                               <button
-                                class="group relative flex w-full items-center rounded-[18px] border-0 bg-white text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] dark:bg-neutral-800 dark:text-white text-[20px] leading-[28px] font-medium"
+                                class="group relative flex w-full items-center rounded-[18px] border-0 bg-white text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] dark:text-black text-[20px] leading-[28px] font-medium"
                                 type="button"
                                 data-te-collapse-init
                                 data-te-collapse-collapsed
@@ -355,7 +355,7 @@
                         <div class="shadow-[0px_5px_16px_rgba(8,15,52,0.06)] py-[30px] px-[40px] w-full my-[30px] border-[#fff] border-[2px] rounded-[18px] group-[[data-te-collapse-collapsed]]:border-[0px]">
                           <h2 class="mb-0" id="headingTwo">
                             <button
-                              class="group relative flex w-full items-center rounded-[18px] border-0 bg-white text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] dark:bg-neutral-800 dark:text-white text-[20px] leading-[28px] font-medium"
+                              class="group relative flex w-full items-center rounded-[18px] border-0 bg-white text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] dark:text-black text-[20px] leading-[28px] font-medium"
                               type="button"
                               data-te-collapse-init
                               data-te-collapse-collapsed
@@ -394,7 +394,7 @@
                         <div class="shadow-[0px_5px_16px_rgba(8,15,52,0.06)] py-[30px] px-[40px] w-full my-[30px] border-[#fff] border-[2px] rounded-[18px] group-[[data-te-collapse-collapsed]]:border-[0px]">
                           <h2 class="accordion-header mb-0" id="headingThree">
                             <button
-                              class="group relative flex w-full items-center rounded-[18px] border-0 bg-white text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] dark:bg-neutral-800 dark:text-white text-[20px] leading-[28px] font-medium "
+                              class="group relative flex w-full items-center rounded-[18px] border-0 bg-white text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] dark:text-black text-[20px] leading-[28px] font-medium "
                               type="button"
                               data-te-collapse-init
                               data-te-collapse-collapsed
