@@ -14,10 +14,10 @@ stages:
   #     - if: $CI_COMMIT_BRANCH == "qa"
 
 # Pre-Merge Environment #1 check build and delpoy Docker image using Cloud Build
-vs-website:pre_dev_deploy:
+cu-website:pre_dev_deploy:
   image: google/cloud-sdk:alpine
   stage: deploy
-  environment: vs-website-dev1
+  environment: cu-app-dev1
   rules:
     - if: $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "development" || $CI_COMMIT_REF_NAME == "development"
   before_script:
@@ -27,10 +27,10 @@ vs-website:pre_dev_deploy:
     - bash tools/pre_dev_deploy.sh
 
 # Pre-Merge Environment #2 check build and deploy Docker image using Cloud Build
-vs-website:pre_dev_deploy2:
+cu-website:pre_dev_deploy2:
   image: google/cloud-sdk:alpine
   stage: deploy
-  environment: vs-website-dev2
+  environment: cu-app-dev2
   rules:
     - if: $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "development" || $CI_COMMIT_REF_NAME == "development"
   before_script:
@@ -41,7 +41,7 @@ vs-website:pre_dev_deploy2:
 
 
 # Build docker image using Cloud Build
-vs-website:build:
+cu-website:build:
   image: google/cloud-sdk:alpine
   stage: build
   rules:
@@ -49,12 +49,12 @@ vs-website:build:
     - if: $CI_COMMIT_REF_NAME == "development" && $GITLAB_USER_LOGIN == "alphabetacreatives"
     - if: $CI_MERGE_REQUEST_APPROVED == "true" && $GITLAB_USER_LOGIN == "alphabetacreatives"
       changes:
-        - venturseed-website/*
+        - apps/*
     - if: $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "development" && $GITLAB_USER_LOGIN == "alphabetacreatives" 
     - if: $CI_COMMIT_REF_NAME == "development" && $GITLAB_USER_LOGIN == "alphabetacreatives"
     - if: $CI_MERGE_REQUEST_APPROVED == "true" && $GITLAB_USER_LOGIN == "alphabetacreatives"
       changes:
-        - docs/venturseed-website/*
+        - docs/apps/*
   before_script:
     - bash tools/gcloud_dev_acc.sh
  # when: manual
@@ -66,8 +66,8 @@ vs-website:build:
   retry: 2
 
 # Deploy the container image to Cloud Run
-vs_website:dev_deploy:
-  environment: vs-website-dev
+cu_website:dev_deploy:
+  environment: cu-website-dev
   image: google/cloud-sdk:alpine
   stage: deploy
   rules:
@@ -83,12 +83,12 @@ vs_website:dev_deploy:
     - if: $CI_MERGE_REQUEST_APPROVED == "true" && $GITLAB_USER_LOGIN == "alphabetacreatives"
       changes:
         - docs/venturseed-website/*
-  needs: ["vs-website:build"]
+  needs: ["cu-website:build"]
   before_script:
     - bash tools/gcloud_dev_acc.sh
   script:
     - gcloud run deploy venturseed-website-dev
       --image us-central1-docker.pkg.dev/venturseed-website-dev/venturseed-website-dev/venturseed-website-dev:$CI_COMMIT_REF_SLUG
       --region us-central1
-      --service-account vs-dev-cloud-cd@venturseed-website-dev.iam.gserviceaccount.com
+      --service-account cu-dev-cloud-cd@venturseed-website-dev.iam.gserviceaccount.com
   retry: 2

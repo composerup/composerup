@@ -4,7 +4,7 @@ stages:
   - test
   - deploy
 
-vs-website:pre_prod_deploy:
+cu-website:pre_prod_deploy:
   image: google/cloud-sdk:alpine
   stage: deploy
   environment: vs-website-prod
@@ -17,7 +17,7 @@ vs-website:pre_prod_deploy:
     - bash tools/pre_prod_deploy.sh
 
 # Build docker image using Cloud Build
-vs-website:build:
+cu-website:build:
   image: google/cloud-sdk:alpine
   stage: build
   rules:
@@ -44,7 +44,7 @@ vs-website:build:
   retry: 2
 
 # Deploy the container image to Cloud Run
-vs-website:prod_deploy:
+cu-website:prod_deploy:
   environment: vs-website-prod
   image: google/cloud-sdk:alpine
   stage: deploy
@@ -61,7 +61,7 @@ vs-website:prod_deploy:
     - if: $CI_MERGE_REQUEST_APPROVED == "true" && $GITLAB_USER_LOGIN == "alphabetacreatives"
       changes:
         - docs/venturseed-website/*
-  needs: ["vs-website:build"]
+  needs: ["cu-website:build"]
   before_script:
     - bash tools/gcloud_prod_acc.sh
   script:
