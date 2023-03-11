@@ -19,9 +19,9 @@ gcloud auth activate-service-account $ACCOUNT_PROD --key-file $GOOGLE_CLOUD_CRED
 #
 
 # npm For Vite production assets
-which npm
-echo $PATH
-apk add nodejs npm
-cd venturseed-website || exit
-npm i vite 
-npm run prod
+#which npm
+#echo $PATH
+#apk add nodejs npm
+#cd venturseed-website || exit
+#npm i vite 
+#npm run prod
