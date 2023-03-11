@@ -1,0 +1,72 @@
+# STAGES OF OUR BUILD
+stages:
+  - build
+  - test
+  - deploy
+
+vs-website:pre_prod_deploy:
+  image: google/cloud-sdk:alpine
+  stage: deploy
+  environment: vs-website-prod
+  rules:
+    - if: $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "main" || $CI_COMMIT_REF_NAME == "main"
+  before_script:
+    - bash tools/gcloud_prod_acc.sh
+  when: manual
+  script:
+    - bash tools/pre_prod_deploy.sh
+
+# Build docker image using Cloud Build
+vs-website:build:
+  image: google/cloud-sdk:alpine
+  stage: build
+  rules:
+    - if: $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "main" || $CI_COMMIT_REF_NAME == "main"
+    - if: $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "main" && $GITLAB_USER_LOGIN == "alphabetacreatives" 
+    - if: $CI_COMMIT_REF_NAME == "main" && $GITLAB_USER_LOGIN == "alphabetacreatives"
+    - if: $CI_MERGE_REQUEST_APPROVED == "true" && $GITLAB_USER_LOGIN == "alphabetacreatives"
+      changes:
+        - venturseed/*
+    - if: $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "main" || $CI_COMMIT_REF_NAME == "main"
+    - if: $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "main" && $GITLAB_USER_LOGIN == "alphabetacreatives" 
+    - if: $CI_COMMIT_REF_NAME == "main" && $GITLAB_USER_LOGIN == "alphabetacreatives"
+    - if: $CI_MERGE_REQUEST_APPROVED == "true" && $GITLAB_USER_LOGIN == "alphabetacreatives"
+      changes:
+        - docs/venturseed-website/*
+  before_script:
+    - bash tools/gcloud_prod_acc.sh
+  #when: manual
+  script:
+    - cd venturseed-website
+    - tar -czf venturseed-website-prod.tgz *
+    - gcloud builds submit venturseed-website-prod.tgz
+      --tag us-central1-docker.pkg.dev/venturseed-website-prod/venturseed-website-prod/venturseed-website-prod:$CI_COMMIT_REF_SLUG
+  retry: 2
+
+# Deploy the container image to Cloud Run
+vs-website:prod_deploy:
+  environment: vs-website-prod
+  image: google/cloud-sdk:alpine
+  stage: deploy
+  rules:
+    - if: $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "main" || $CI_COMMIT_REF_NAME == "main"
+    - if: $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "main" && $GITLAB_USER_LOGIN == "alphabetacreatives" 
+    - if: $CI_COMMIT_REF_NAME == "main" && $GITLAB_USER_LOGIN == "alphabetacreatives"
+    - if: $CI_MERGE_REQUEST_APPROVED == "true" && $GITLAB_USER_LOGIN == "alphabetacreatives"
+      changes:
+        - venturseed/*
+    - if: $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "main" || $CI_COMMIT_REF_NAME == "main"
+    - if: $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "main" && $GITLAB_USER_LOGIN == "alphabetacreatives" 
+    - if: $CI_COMMIT_REF_NAME == "main" && $GITLAB_USER_LOGIN == "alphabetacreatives"
+    - if: $CI_MERGE_REQUEST_APPROVED == "true" && $GITLAB_USER_LOGIN == "alphabetacreatives"
+      changes:
+        - docs/venturseed-website/*
+  needs: ["vs-website:build"]
+  before_script:
+    - bash tools/gcloud_prod_acc.sh
+  script:
+    - gcloud run deploy venturseed-website-prod
+      --image us-central1-docker.pkg.dev/venturseed-website-prod/venturseed-website-prod/venturseed-website-prod:$CI_COMMIT_REF_SLUG
+      --region us-central1
+      --service-account vs-prod-cloud-cd@venturseed-website-prod.iam.gserviceaccount.com
+  retry: 2
