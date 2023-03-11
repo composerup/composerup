@@ -5,14 +5,14 @@ if [ "$SKIP_JOB" == true ]; then
     exit
 fi
 
-cd venturseed-website || exit 
+cd composerup || exit 
 
-tar -czf venturseed-website.tgz ./*
+tar -czf composerup.tgz ./*
 
-gcloud builds submit venturseed-website.tgz \
-  --tag us-central1-docker.pkg.dev/venturseed-website-dev/venturseed-website-dev/venturseed-website-dev1:"$CI_COMMIT_REF_SLUG"
+gcloud builds submit composerup.tgz \
+  --tag us-central1-docker.pkg.dev/composerup-dev/composerup-dev/composerup-dev1:"$CI_COMMIT_REF_SLUG"
 
-gcloud run deploy venturseed-website-dev1 \
-  --image us-central1-docker.pkg.dev/venturseed-website-dev/venturseed-website-dev/venturseed-website-dev1:"$CI_COMMIT_REF_SLUG" \
+gcloud run deploy composerup-dev1 \
+  --image us-central1-docker.pkg.dev/composerup-dev/composerup-dev/composerup-dev1:"$CI_COMMIT_REF_SLUG" \
   --region us-central1 \
-  --service-account vs-dev-cloud-cd@venturseed-website-dev.iam.gserviceaccount.com
+  --service-account vs-dev-cloud-cd@composerup-dev.iam.gserviceaccount.com

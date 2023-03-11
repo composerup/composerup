@@ -3,7 +3,7 @@
 
 #cat "$vs_dev_service_creds" >"$(pwd)/service-account.json"
 
-gcloud config set project composerup-dev
+gcloud config set project composer-up-dev
 
 gcloud auth activate-service-account $ACCOUNT_DEV --key-file $GOOGLE_CLOUD_CREDENTIALS_DEV
 

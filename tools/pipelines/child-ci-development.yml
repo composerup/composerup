@@ -45,24 +45,26 @@ cu-website:build:
   image: google/cloud-sdk:alpine
   stage: build
   rules:
+    - if: $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "development" || $CI_COMMIT_REF_NAME == "development"
     - if: $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "development" && $GITLAB_USER_LOGIN == "alphabetacreatives" 
     - if: $CI_COMMIT_REF_NAME == "development" && $GITLAB_USER_LOGIN == "alphabetacreatives"
     - if: $CI_MERGE_REQUEST_APPROVED == "true" && $GITLAB_USER_LOGIN == "alphabetacreatives"
       changes:
-        - apps/*
+        - composerup/*
+    - if: $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "development" || $CI_COMMIT_REF_NAME == "development"
     - if: $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "development" && $GITLAB_USER_LOGIN == "alphabetacreatives" 
     - if: $CI_COMMIT_REF_NAME == "development" && $GITLAB_USER_LOGIN == "alphabetacreatives"
     - if: $CI_MERGE_REQUEST_APPROVED == "true" && $GITLAB_USER_LOGIN == "alphabetacreatives"
       changes:
-        - docs/apps/*
+        - docs/composerup/*
   before_script:
     - bash tools/gcloud_dev_acc.sh
  # when: manual
   script:
     - cd venturseed-website
-    - tar -czf venturseed-website-dev.tgz *
-    - gcloud builds submit venturseed-website-dev.tgz
-      --tag us-central1-docker.pkg.dev/venturseed-website-dev/venturseed-website-dev/venturseed-website-dev:$CI_COMMIT_REF_SLUG
+    - tar -czf composerup-dev.tgz *
+    - gcloud builds submit composerup-dev.tgz
+      --tag us-central1-docker.pkg.dev/composerup-dev/composerup-dev/composerup-dev:$CI_COMMIT_REF_SLUG
   retry: 2
 
 # Deploy the container image to Cloud Run
@@ -76,19 +78,19 @@ cu_website:dev_deploy:
     - if: $CI_COMMIT_REF_NAME == "development" && $GITLAB_USER_LOGIN == "alphabetacreatives"
     - if: $CI_MERGE_REQUEST_APPROVED == "true" && $GITLAB_USER_LOGIN == "alphabetacreatives"
       changes:
-        - venturseed-website/*
+        - composerup/*
    # - if: $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "development" || $CI_COMMIT_REF_NAME == "development"
     - if: $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "development" && $GITLAB_USER_LOGIN == "alphabetacreatives" 
     - if: $CI_COMMIT_REF_NAME == "development" && $GITLAB_USER_LOGIN == "alphabetacreatives"
     - if: $CI_MERGE_REQUEST_APPROVED == "true" && $GITLAB_USER_LOGIN == "alphabetacreatives"
       changes:
-        - docs/venturseed-website/*
+        - docs/composerup/*
   needs: ["cu-website:build"]
   before_script:
     - bash tools/gcloud_dev_acc.sh
   script:
-    - gcloud run deploy venturseed-website-dev
-      --image us-central1-docker.pkg.dev/venturseed-website-dev/venturseed-website-dev/venturseed-website-dev:$CI_COMMIT_REF_SLUG
+    - gcloud run deploy composerup-dev
+      --image us-central1-docker.pkg.dev/composerup-dev/composerup-dev/composerup-dev:$CI_COMMIT_REF_SLUG
       --region us-central1
-      --service-account cu-dev-cloud-cd@venturseed-website-dev.iam.gserviceaccount.com
+      --service-account cu-dev-cloud-cd@composerup-dev.iam.gserviceaccount.com
   retry: 2
