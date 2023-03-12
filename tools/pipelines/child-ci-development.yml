@@ -55,7 +55,7 @@ cu-website:build:
     - cd composerup
     - tar -czf composerup-dev.tgz *
     - gcloud builds submit composerup-dev.tgz
-      --tag us-central1-docker.pkg.dev/composerup-dev/composerup-dev/composerup-dev:$CI_COMMIT_REF_SLUG
+      --tag us-central1-docker.pkg.dev/composer-up-dev/composerup-dev/composerup-dev:$CI_COMMIT_REF_SLUG
   retry: 2
 
 # Deploy the container image to Cloud Run
