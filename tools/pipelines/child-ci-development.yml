@@ -60,7 +60,7 @@ cu-website:build:
 
 # Deploy the container image to Cloud Run
 cu_website:dev_deploy:
-  environment: cu-website-dev
+  environment: cu-app-dev
   image: google/cloud-sdk:alpine
   stage: deploy
   rules:
@@ -79,6 +79,7 @@ cu_website:dev_deploy:
   needs: ["cu-website:build"]
   before_script:
     - bash tools/gcloud_dev_acc.sh
+  # when: manual
   script:
     - gcloud run deploy composerup-dev
       --image us-central1-docker.pkg.dev/composer-up-dev/composerup-dev/composerup-dev:$CI_COMMIT_REF_SLUG

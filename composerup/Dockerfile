@@ -14,7 +14,7 @@ RUN composer install --optimize-autoloader
 
 # Use the official PHP image.
 # https://hub.docker.com/_/php
-FROM php:8.1-apache
+FROM php:8.2.3-apache
 
 #Ensure we are in production Mode - We can switch these off if needed.
 #ENV APP_ENV=production
